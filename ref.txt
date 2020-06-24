@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <title>Ariel Bautista JQuery</title>
+</head>
+<body>
+
+  <h1>Victória</h1>
+
+  <!-- Git y Github
+  - git init | git add <file> | git status | git commit | git push
+    git pull | git clone 
+    git reset --hard nnnnn | git log --online 
+  -  -->
+
+  <!-- <p id="tx">texto</p>
+  <div class="rojo">texto en rojo</div>
+  <p id="rj">texto en color rojo</p> -->
+
+  <!-- <small>texto1 small</small><br>
+  <strong>texto2 strong</strong><br>
+  <span>texto3 span</span> -->
+
+  <!-- <p id="texto">Esta página es <strong>muy sencilla</strong></p>  
+  <div id="casa">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid reiciendis nisi facilis suscipit non qui et, hic molestiae voluptates omnis temporibus tempore? Repellendus esse fuga asperiores iure beatae reprehenderit!</p>
+  </div>
+  
+  <p title="hola">un texto</p>
+  <p title="hey">un texto</p> -->
+
+  <!-- selección por jerarquia -->
+  <!-- <span id="caja">
+    texto simple
+    <p>texto hijo</p>
+    <p>texto hijo2</p>
+  </span> -->
+
+  <!-- <ul>
+    <li class="uno">item 1</li>
+    <li class="dos">item 2</li>
+    <li class="tres">item 3</li>
+    <li class="cuatro">item 4</li>
+  </ul> -->
+
+  <!-- <ul>
+    <li class="uno">texto 1</li>
+    <li class="dos">texto 2</li>
+    <li class="tres">texto 3</li>
+  </ul> -->
+
+    <ul>
+      <li>texto 1</li>
+      <li>texto 2</li>
+      <li>texto 3</li>
+      <li>texto 4</li>
+    </ul>
+
+  <script src="./"></script>
+  <script>
+    $(document).ready(function(){
+
+    //pseudo selectores
+    $('li:first').css('border','1px double green');
+    $('li:last').css('border','1px double green');
+
+
+    //selección del elemento siguiente
+    // $('li.uno + li').css('border','2px double black');
+
+    //selección de hermanos siguientes
+    // $('li.uno ~ li').css('border', '2px double blue');
+
+    //   //selección por jerarquía
+    //   $('#caja p').css('font-family','tahoma');
+
+      // $('*').css('color','magenta');
+
+      // $('#tx,.rojo,#rj').css('color','brown');
+      // $('.rojo').css('color','cyan');
+      // $('#rj').css('color','magenta');
+
+      // $('#texto').css('color','red');
+      // // $('#casa').text('Francis JS');
+      // $('div#casa').text('Francis JS');
+      // $('p[title=hola]').css('color','orange');
+
+      // $('#texto').css({"color":"blue",'background':'yellow'});
+    });
+
+    // function cargar(){
+    //   console.log('hola!');
+    // };
+    // window.onLoad = cargar();   //se executa apenas após carregamento total
+
+  </script>
+</body>
+</html>
